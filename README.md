@@ -52,7 +52,7 @@
 
     ![cmd_AAy50eVCAj.png](%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%201bf1c08e4d2a43d59df7ed5d30238e61/cmd_AAy50eVCAj.png)
 
-6. Введите `python3 [main.py](http://main.py)--port /dev/ttyACM0 --cam /dev/video0` и нажмите Enter
+6. Введите `python3 main.py --port /dev/ttyACM0 --cam /dev/video0` и нажмите Enter
 
     ![cmd_fmNU3tAAZn.png](%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%201bf1c08e4d2a43d59df7ed5d30238e61/cmd_fmNU3tAAZn.png)
 
