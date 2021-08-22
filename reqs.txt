@@ -1,5 +1,0 @@
-opencv-python
-flask
-fastapi
-uvicorn
-imutils
