@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>179</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TrumpetHoler Input Device Driver</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Выберите COM Port</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="selectPortBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>331</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connectButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>331</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подключится</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Введите IP робота</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>192.168.145.2</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>357</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Устройство</string>
+    </property>
+    <addaction name="action_COM"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Окно</string>
+    </property>
+    <addaction name="action_TrumpetHoler_Driver"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="action_3"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Подключится</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Отключится</string>
+   </property>
+  </action>
+  <action name="action_TrumpetHoler_Driver">
+   <property name="text">
+    <string>Закрыть TrumpetHoler Driver</string>
+   </property>
+  </action>
+  <action name="action_COM">
+   <property name="text">
+    <string>Обновить список COM портов</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Автор</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
