@@ -8,6 +8,7 @@ from flask import Flask, Response
 parser = argparse.ArgumentParser()
 parser.add_argument('--port', help='PORT ID', default=None)
 parser.add_argument('--cam', help='CAM ID', default=0)
+parser.add_argument('--cam1', help='CAM ID', default=1)
 args = parser.parse_args()
 
 debug_mode = False
@@ -20,6 +21,7 @@ else:
     ser = None
 
 cap1 = cv2.VideoCapture(args.cam)
+cap2 = cv2.VideoCapture(args.cam1)
 app = Flask(__name__)
 
 
@@ -36,9 +38,13 @@ def gen_frames(camera):
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 
-@app.route('/video.jpg')
+@app.route('/video0.jpg')
 def video_feed0():
     return Response(gen_frames(cap1), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/video1.jpg')
+def video_feed1():
+    return Response(gen_frames(cap2), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 PORT = 9780
 SERVER = "0.0.0.0"
