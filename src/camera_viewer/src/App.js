@@ -17,7 +17,9 @@ function App() {
     }, [isLoaded]);
   return (
     <div className="App">
-      <iframe src={`http://${window.ip}:9999/video.jpg`}/>
+      <iframe src={`http://${window.ip}:9999/video0.jpg`}/>
+      <iframe src={`http://${window.ip}:9999/video1.jpg`}/>
+      <iframe src={`http://${window.ip}:9999/video2.jpg`}/>
     </div>
   );
 }
