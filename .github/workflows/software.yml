@@ -20,7 +20,9 @@ jobs:
       with:
         python-version: 3.9
     - name: Change Directory
-      run: cd src/input_software/
+      run: |
+            cd ./src/input_software/
+            ls -l -a .
     - name: Install libs
       run: pip3 install -r reqs.txt
     - name: Install PyInstaller
