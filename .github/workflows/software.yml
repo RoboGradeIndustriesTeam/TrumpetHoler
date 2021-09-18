@@ -24,7 +24,7 @@ jobs:
             cd ./src/input_software/
             ls -l -a .
     - name: Install libs
-      run: pip3 install -r reqs.txt
+      run: pip3 install -r ./reqs.txt
     - name: Install PyInstaller
       run: pip3 install pyinstaller
     - name: Build App Using PyInstaller
