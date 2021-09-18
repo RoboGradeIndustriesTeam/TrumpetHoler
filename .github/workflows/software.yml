@@ -1,0 +1,33 @@
+name: Software
+
+on:
+  push:
+    branches: [ main ]
+    paths: [src/input_software/**]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Change Directory
+      run: cd src/input_software/
+    - name: Install libs
+      run: pip3 install -r reqs.txt
+    - name: Install PyInstaller
+      run: pip3 install pyinstaller
+    - name: Build App Using PyInstaller
+      run: pyinstaller --one-file main.py
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: Artifact
+        path: ./dist
