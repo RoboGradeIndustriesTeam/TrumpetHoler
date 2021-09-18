@@ -1,5 +1,4 @@
 aiohttp==3.7.4.post0
-airdrop-ng==1.1
 airgraph-ng==1.1
 apparmor==3.0.3
 appdirs==1.4.4
