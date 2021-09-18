@@ -6,6 +6,7 @@ on:
     paths: [src/input_software/**]
   pull_request:
     branches: [ main ]
+  workflow_dispatch: 
 
 jobs:
   build:
