@@ -29,7 +29,6 @@ jobs:
       run: pyinstaller --one-file main.py
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
-      working-directory: ./src/input_software
       with:
         name: Artifact
-        path: ./dist
+        path: ./src/input_software/dist
