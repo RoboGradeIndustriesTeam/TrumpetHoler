@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-    paths: [src/camera_software]
+    paths: [src/camera_software/**]
   pull_request:
     branches: [ main ]
 
