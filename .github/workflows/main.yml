@@ -20,3 +20,9 @@ jobs:
         with:
           branch: gh-pages
           folder: ./src/camera_software/src
+      - name: Upload a artifact
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: Build
+          path: ./src/camera_software/src
+        
