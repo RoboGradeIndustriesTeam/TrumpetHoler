@@ -12,3 +12,8 @@
 * {
   font-family: "Comfortaa", cursive !important;
 }
+
+#camera1 {
+  transform: rotate(270deg);
+  margin-top: 100px;
+}
