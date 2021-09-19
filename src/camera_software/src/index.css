@@ -1,14 +1,14 @@
 #app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .camera {
-    width: 640px !important;
-    height: 480px !important;
+  width: 640px !important;
+  height: 480px !important;
 }
 
 * {
-    font-family: 'Comfortaa', cursive !important;
+  font-family: "Comfortaa", cursive !important;
 }
