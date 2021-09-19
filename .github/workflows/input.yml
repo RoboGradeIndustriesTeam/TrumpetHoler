@@ -1,0 +1,33 @@
+name: Build QT App
+
+on:
+  push:
+    branches: [ main ]
+    paths: [src/input_software/**]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      working-directory: ./src/input_software/
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r reqs.txt
+        pip install pyinstaller
+    - name: build with pyinstaller
+      working-directory: ./src/input_software/
+      run: |
+        pyinstaller --one-file main.py
+        
