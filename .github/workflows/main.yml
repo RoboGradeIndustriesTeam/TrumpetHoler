@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Upload ZIP
 
 on:
   push:
@@ -14,15 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          branch: gh-pages
-          folder: ./src/camera_software/src
+      
       - name: Upload a artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: Build
+          name: Archive
           path: ./src/camera_software/src
         
