@@ -63,7 +63,7 @@
 - Не пугайтесь открытой консоли
 - Выберите нужный COM порт и нажмите подключится
 - Всё готово. Если возникнет ошибка, то перезагрузите робота и перейдите к пункту 4
-- Теперь откройте [сайт](https://robogradeindustriesteam.github.io/TrumpetHoler/) и выбирете последний пункт (нажмите на текст)
+- Теперь откройте [сайт](https://github.com/RoboGradeIndustriesTeam/TrumpetHoler/actions/workflows/zip_upload.yml) и выбирете последний пункт (нажмите на текст)
 
     ![Тут должна быть картинка](asset/Actions1.png) 
 
